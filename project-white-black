@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project White & Black</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: linear-gradient(135deg, #000000, #1e293b);
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .box {
+      background: #020617;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      max-width: 420px;
+      width: 90%;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    p {
+      opacity: 0.9;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 22px;
+      border: none;
+      border-radius: 10px;
+      background: white;
+      color: black;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #e5e7eb;
+    }
+    .status {
+      margin-top: 15px;
+      font-weight: bold;
+      color: #22c55e;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h1>Project White & Black</h1>
+  <p>Free Autonomous Security Testing Demo</p>
+  <p>🚫 No payments • 🚫 No subscriptions • 🚫 No ads</p>
+
+  <button onclick="runTest()">Run Free Test</button>
+
+  <div id="output" class="status"></div>
+</div>
+
+<script>
+  function runTest() {
+    document.getElementById("output").innerText =
+      "✅ Project White & Black is running successfully (FREE MODE)";
+  }
+</script>
+
+</body>
+</html>
